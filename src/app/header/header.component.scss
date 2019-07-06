@@ -1,0 +1,93 @@
+.container{
+  background: #ff6600;
+  margin-top: 10px;
+  padding: 0px 5px 0px 0px;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.icon {
+  display: flex;
+img {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 20px;
+  margin: 2px;
+}
+}
+.brand {
+  display: flex;
+  font-weight: bold;
+  margin: 0 5px 0 5px !important;
+  #brand {
+    color: #000 !important;
+    text-decoration-line: none;
+  }
+}
+.menu1 {
+  display: flex;
+}
+.menu2 {
+  display: flex;
+  flex-grow: 9;
+  justify-content: flex-end;
+  .login {
+    text-align: right;
+    margin: 0 5px 0 15px;
+  }
+
+}
+.menuItem {
+    margin: 1.5px !important;
+    flex-grow: 0.2;
+    font-size: 15px;
+}
+// Media Queries
+@media (min-width: 992px){
+  .container {
+      max-width: 100%;
+      margin:0px;
+      padding:0px;
+  }
+  }
+@media only screen and (max-width: 750px) {
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 750px;
+   }
+}
+@media (min-width: 768px){
+  .container {
+      padding: 0px;
+      max-width: 100%;
+      margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 520px)  {
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 520px;
+   }
+   .menuItems {
+      max-width: 520px;
+   }
+
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 320px;
+   }
+   .menuItems {
+      max-width: 320px;
+   }
+
+}

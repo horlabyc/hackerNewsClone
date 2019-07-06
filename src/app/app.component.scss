@@ -1,0 +1,21 @@
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 750px;
+  }
+}
+@media (min-width: 768px){
+  .container {
+      // max-width: 100%;
+      margin-right: 30px;
+      margin-left: 30px;
+  }
+}
+@media (min-width: 992px){
+.container {
+    max-width: 100%;
+    margin:0px;
+    padding:0px;
+}
+}

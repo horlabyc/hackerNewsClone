@@ -1,0 +1,28 @@
+<ng-container>
+  <div class="container">
+    <div class="contentPage pt-3">
+      <div id="loader" *ngIf="isLoading">
+        <div class="inner rotate-one"></div>
+        <div class="inner rotate-two"></div>
+        <div class="inner rotate-three"></div>
+      </div>
+      <ol>
+        <li *ngFor="let news of hackerNews">
+          <p class="news">
+            <span uk-icon="icon: triangle-up"></span>{{ news.title }}<a href="{{ news.url }}" target="_blank" >  ({{ news.shortUrl }})</a>
+          </p>
+          <span class="newsMeta"
+            >{{ news.points }} points by {{ news.author }} {{ news.timeISO}}  ago | hide |
+            {{ news.commentCount }}</span
+          >
+        </li>
+      </ol>
+    </div>
+    <app-footer></app-footer>
+  </div>
+
+  <div class=" container uk-alert-danger" uk-alert *ngIf="isError">
+      <a class="uk-alert-close" uk-close></a>
+      <p>Error getting resources, check your internet connection.</p>
+  </div>
+</ng-container>
